@@ -1,9 +1,9 @@
-import hw2_twitterAPI as twAPI
+import twitterAPI as twAPI
 import csv
 import redis
 import time
 import random as rnd
-from hw2_objects import Tweet
+from tweet_objects import Tweet
 r = redis.Redis('localhost', 6379, decode_responses=True)
 
 

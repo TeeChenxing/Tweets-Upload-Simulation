@@ -1,6 +1,6 @@
 import csv
 import redis
-from hw2_objects import Tweet
+from tweet_objects import Tweet
 r = redis.Redis('localhost', 6379, decode_responses=True)
 
 

@@ -1,6 +1,6 @@
-import hw2_twitterAPI as twAPI
+import twitterAPI as twAPI
 import redis
-import hw2_driver as driver
+import driver as driver
 r = redis.Redis('localhost', 6379, decode_responses=True)
 
 
