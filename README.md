@@ -14,7 +14,7 @@ Redis, as a key-value DBMS can help solve this issue since key-value databases c
 
 ### Running the Comparison
 
-The repository will have 2 folders, one using MySQL and the other using Redis. User can run the ```simulation_test.py``` file in each folder
+The repository has 2 folders, one using MySQL and the other using Redis. User can run the ```simulation_test.py``` file in each folders
 to see the runtime of data retrieval by using a RDB and a KVDB respectively. 
 
  
