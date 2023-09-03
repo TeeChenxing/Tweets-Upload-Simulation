@@ -7,8 +7,8 @@ Redis, as a key-value DBMS can help solve this issue since key-value databases c
 
 ### Prerequisites
 
-- Have Redis installed and the DBMS running in the background: ```https://redis.io/docs/getting-started/installation/```
-‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ↳ For Windows users, Memurai can be an alternative: ```https://www.memurai.com/get-memurai```
+- Have Redis installed and the DBMS running in the background: ```https://redis.io/docs/getting-started/installation/```\
+     ↳ For Windows users, Memurai can be an alternative: ```https://www.memurai.com/get-memurai```
 
 - Have the Redis library in Python installed.
 
