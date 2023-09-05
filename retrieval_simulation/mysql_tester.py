@@ -5,7 +5,7 @@ import pprint as pp
 
 
 def main():
-
+    
     tweets_api = mysql.connector.connect(host='localhost',
                                          user='root',
                                          password='dualSQL_admin',

@@ -45,8 +45,8 @@ def get_followers(cursor, user_id):
     """
 
     find_followers_stmt = ("select USER_ID "
-                            "from follows "
-                            "where FOLLOWS_ID = %s ")
+                           "from follows "
+                           "where FOLLOWS_ID = %s ")
 
     cursor.execute(find_followers_stmt, (user_id,))
     followers_ls = cursor.fetchall()
@@ -64,8 +64,8 @@ def get_followees(cursor, user_id):
     """
 
     find_followees_stmt = ("select FOLLOWS_ID "
-                            "from follows "
-                            "where USER_ID = %s ")
+                           "from follows "
+                           "where USER_ID = %s ")
 
     cursor.execute(find_followees_stmt, (user_id,))
     followers_ls = cursor.fetchall()
@@ -83,8 +83,8 @@ def get_tweets(cursor, user_id):
     """
 
     find_tweet_stmt = ("select tweet_text "
-                            "from tweets "
-                            "where USER_ID = %s ")
+                       "from tweets "
+                       "where USER_ID = %s ")
 
     cursor.execute(find_tweet_stmt, (user_id,))
     followers_ls = cursor.fetchall()

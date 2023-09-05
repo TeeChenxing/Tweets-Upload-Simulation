@@ -41,7 +41,6 @@ def find_timeline_timer(cursor, limit):
                         "order by tweets.tweet_ts DESC "
                         "limit %s; ")
 
-
     start = time.time()
     for i in range(1, 101):
         random_user_num = rnd.randint(1, 10000)
@@ -51,6 +50,3 @@ def find_timeline_timer(cursor, limit):
     elapsed_time = end - start
 
     return elapsed_time
-
-
-

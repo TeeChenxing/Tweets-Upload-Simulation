@@ -12,6 +12,7 @@ data_folder = "datasets"
 follows_path = os.path.join(data_folder, "follows.csv")
 tweets_path = os.path.join(data_folder, "tweets.csv")
 
+
 def sql_runtime():
     tweets_api = mysql.connector.connect(host='localhost',
                                          user='root',
@@ -21,7 +22,8 @@ def sql_runtime():
     mycursor = tweets_api.cursor(buffered=True)
     limit = 10
 
-    post_tweet_time = driver1.post_tweet_timer(tweets_path, mycursor, tweets_api)
+    post_tweet_time = driver1.post_tweet_timer(
+        tweets_path, mycursor, tweets_api)
     get_timeline_time = driver1.find_timeline_timer(mycursor, limit)
     print(f'Time to Post all Tweets Using MySQL: {post_tweet_time}')
     print()
@@ -44,5 +46,6 @@ def main():
     sql_runtime()
     redis_runtime()
 
+
 if __name__ == '__main__':
-    main()   
+    main()
