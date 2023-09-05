@@ -1,4 +1,4 @@
-import twitterAPI as twAPI
+import redis_twitterAPI as twAPI
 import csv
 import redis
 import time
