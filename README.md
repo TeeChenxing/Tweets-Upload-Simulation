@@ -1,4 +1,6 @@
-## Tweets Upload Simulation
+<h1 align='center'> 
+  Tweets Upload Simulation
+</h1>
 
 ### Project Background
 
